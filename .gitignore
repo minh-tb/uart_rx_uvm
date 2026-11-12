@@ -1,0 +1,20 @@
+# Archives
+*.tar
+
+# Simulator & build artifacts (QuestaSim / Xcelium / VCS)
+work/
+*.wlf
+*.ucdb
+*.vstf
+transcript
+design.*
+xrun.*
+xcelium.d/
+cov_work/
+imc.*
+mdv.log
+qwave.db/
+
+# OS / Editor
+.DS_Store
+Thumbs.db

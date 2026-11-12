@@ -1,0 +1,216 @@
+vsim -c top -do sim.do +UVM_TESTNAME=uart_demo_test
+Reading pref.tcl
+
+# 2021.2_1
+
+# vsim -c top -do "sim.do" "+UVM_TESTNAME=uart_demo_test" 
+# Start time: 13:45:32 on Nov 12,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.uart_tlm_pkg(fast)
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_cfg_pkg(fast)
+# Loading work.uart_chk_pkg(fast)
+# Loading work.uart_if(fast)
+# Loading work.uart_slave_agent_pkg(fast)
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.receiver(fast)
+# Loading work.clk_rst_if(fast)
+# Loading /home/eda/siemens/questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# do sim.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_demo_test...
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/tst/uart_demo_test.sv(35) @ 0: uvm_test_top [uart_demo_test] Starting uart_demo_test sequence execution
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(25) @ 100000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Starting sequence with 20 packets
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 201000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 0: data = 0x3b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 201000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x3b (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 201000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x3b (00111011) frame=1001110110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 9181000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x3b (00111011)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 9181000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x3b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 9181000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x3b == Actual: 0x3b [Matches: 1]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 11431000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 1: data = 0x87
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 11431000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x87 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 11431000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x87 (10000111) frame=1100001110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 20621000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x87 (10000111)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 20621000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x87
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 20621000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x87 == Actual: 0x87 [Matches: 2]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 22871000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 2: data = 0x0b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 22871000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x0b (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 22871000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x0b (00001011) frame=1000010110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 32061000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x0b (00001011)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 32061000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x0b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 32061000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x0b == Actual: 0x0b [Matches: 3]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 34311000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 3: data = 0xa7
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 34311000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xa7 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 34311000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xa7 (10100111) frame=1101001110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 43501000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xa7 (10100111)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 43501000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xa7
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 43501000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xa7 == Actual: 0xa7 [Matches: 4]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 45751000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 4: data = 0x58
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 45751000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x58 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 45751000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x58 (01011000) frame=1010110000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 54941000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x58 (01011000)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 54941000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x58
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 54941000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x58 == Actual: 0x58 [Matches: 5]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 57191000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 5: data = 0xcf
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 57191000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xcf (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 57191000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xcf (11001111) frame=1110011110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 66381000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xcf (11001111)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 66381000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xcf
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 66381000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xcf == Actual: 0xcf [Matches: 6]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 68631000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 6: data = 0xbe
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 68631000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xbe (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 68631000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xbe (10111110) frame=1101111100
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 77821000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xbe (10111110)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 77821000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xbe
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 77821000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xbe == Actual: 0xbe [Matches: 7]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 80071000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 7: data = 0x8d
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 80071000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x8d (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 80071000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x8d (10001101) frame=1100011010
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 89261000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x8d (10001101)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 89261000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x8d
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 89261000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x8d == Actual: 0x8d [Matches: 8]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 91511000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 8: data = 0xde
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 91511000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xde (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 91511000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xde (11011110) frame=1110111100
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 100701000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xde (11011110)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 100701000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xde
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 100701000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xde == Actual: 0xde [Matches: 9]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 102951000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 9: data = 0x8c
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 102951000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x8c (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 102951000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x8c (10001100) frame=1100011000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 112141000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x8c (10001100)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 112141000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x8c
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 112141000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x8c == Actual: 0x8c [Matches: 10]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 114391000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 10: data = 0x1c
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 114391000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x1c (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 114391000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x1c (00011100) frame=1000111000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 123581000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x1c (00011100)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 123581000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x1c
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 123581000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x1c == Actual: 0x1c [Matches: 11]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 125831000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 11: data = 0xa7
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 125831000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xa7 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 125831000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xa7 (10100111) frame=1101001110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 135021000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xa7 (10100111)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 135021000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xa7
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 135021000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xa7 == Actual: 0xa7 [Matches: 12]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 137271000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 12: data = 0x88
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 137271000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x88 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 137271000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x88 (10001000) frame=1100010000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 146461000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x88 (10001000)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 146461000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x88
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 146461000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x88 == Actual: 0x88 [Matches: 13]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 148711000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 13: data = 0x0b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 148711000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x0b (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 148711000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x0b (00001011) frame=1000010110
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 157901000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x0b (00001011)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 157901000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x0b
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 157901000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x0b == Actual: 0x0b [Matches: 14]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 160151000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 14: data = 0xc9
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 160151000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xc9 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 160151000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xc9 (11001001) frame=1110010010
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 169341000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xc9 (11001001)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 169341000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xc9
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 169341000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xc9 == Actual: 0xc9 [Matches: 15]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 171591000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 15: data = 0x69
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 171591000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x69 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 171591000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x69 (01101001) frame=1011010010
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 180781000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x69 (01101001)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 180781000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x69
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 180781000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x69 == Actual: 0x69 [Matches: 16]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 183031000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 16: data = 0xdc
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 183031000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xdc (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 183031000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xdc (11011100) frame=1110111000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 192221000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xdc (11011100)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 192221000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xdc
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 192221000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xdc == Actual: 0xdc [Matches: 17]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 194471000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 17: data = 0x91
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 194471000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0x91 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 194471000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0x91 (10010001) frame=1100100010
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 203661000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0x91 (10010001)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 203661000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0x91
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 203661000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0x91 == Actual: 0x91 [Matches: 18]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 205911000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 18: data = 0xc0
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 205911000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xc0 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 205911000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xc0 (11000000) frame=1110000000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 215101000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xc0 (11000000)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 215101000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xc0
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 215101000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xc0 == Actual: 0xc0 [Matches: 19]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(30) @ 217351000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Sequence generated packet 19: data = 0xe8
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(30) @ 217351000: uvm_test_top.env.scoreboard [sb] Scoreboard stored expected byte: 0xe8 (Queue size: 1)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/uart_driver.sv(61) @ 217351000: uvm_test_top.env.master_agt.driver [uart_driver] Driving serial packet: data=0xe8 (11101000) frame=1111010000
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/slave/uart_slave_monitor.sv(39) @ 226541000: uvm_test_top.env.slave_agt.monitor [uart_slave_monitor] Detected o_valid=1: Captured output byte o_data = 0xe8 (11101000)
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(35) @ 226541000: uvm_test_top.env.scoreboard [sb] Scoreboard received actual byte: 0xe8
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(41) @ 226541000: uvm_test_top.env.scoreboard [sb] MATCH! Expected: 0xe8 == Actual: 0xe8 [Matches: 20]
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/agt/master/seq/uart_demo_seq.sv(33) @ 228791000: uvm_test_top.env.master_agt.sequencer@@seq [uart_demo_seq] Completed sequence
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/tst/uart_demo_test.sv(45) @ 278791000: uvm_test_top [uart_demo_test] Finished uart_demo_test sequence execution
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 278791000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(61) @ 278791000: uvm_test_top.env.scoreboard [sb] --------------------------------------------------
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(62) @ 278791000: uvm_test_top.env.scoreboard [sb]              SCOREBOARD REPORT SUMMARY            
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(63) @ 278791000: uvm_test_top.env.scoreboard [sb] --------------------------------------------------
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(64) @ 278791000: uvm_test_top.env.scoreboard [sb]   Total Packets Matched   : 20
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(65) @ 278791000: uvm_test_top.env.scoreboard [sb]   Total Packets Mismatched: 0
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(66) @ 278791000: uvm_test_top.env.scoreboard [sb] --------------------------------------------------
+# UVM_INFO /home/s23520954/fall_2026/labs/uart_rx/tb/chk/sb.sv(68) @ 278791000: uvm_test_top.env.scoreboard [sb]   >>> OVERALL RESULT: PASSED <<<
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  135
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [sb]    67
+# [uart_demo_seq]    22
+# [uart_demo_test]     2
+# [uart_driver]    20
+# [uart_slave_monitor]    20
+# ** Note: $finish    : /home/eda/siemens/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 278791 ns  Iteration: 54  Instance: /top
+# End time: 13:45:38 on Nov 12,2026, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
